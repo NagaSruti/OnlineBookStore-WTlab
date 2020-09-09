@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<style>
+
+#fields {
+	position: absolute;
+	top: 50px;
+	left: 40%;
+}
+
+body {
+	background-image: url('images/loginimg.jpeg');
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+</style>
+<head>
+<meta charset="UTF-8">
+<title>Register</title>
+<script>
+	function validateForm(){
+		var username = document.getElementById("username").value;
+		var email = document.getElementById("email").value;
+		var mobile = document.getElementById("mobile").value;
+		var address = document.getElementById("address").value;
+		var password = document.getElementById("password").value;
+		if(username == "" && email == "" && mobile == "" && address == "" && password == ""){
+			alert("The form cannot be empty");
+			return false;
+		
+		}
+		if(username == ""){
+			alert("The username cannot be empty");
+			return false;
+		
+		}
+		if(email == ""){
+			alert("The email cannot be empty");
+			return false;
+		
+		}
+		if(mobile == ""){
+			alert("The mobile number cannot be empty");
+			return false;
+		
+		}
+		if(address == ""){
+			alert("The address cannot be empty");
+			return false;
+		
+		}
+		if(password == ""){
+			alert("The password cannot be empty");
+			return false;
+		
+		}
+		
+		if(password.length < 8){
+			alert("Password should be atleast 8 characters");
+			return false;
+		
+		}
+	}
+	function validateUsername(){
+		var username = document.getElementById("username").value;
+		if(username == ""){
+			alert("The username cannot be empty");
+			return false;
+		
+		}
+		
+	}
+	function validateEmail(){
+		var email = document.getElementById("email").value;
+		if(email == ""){
+			alert("The email cannot be empty");
+			return false;
+		
+		}
+		
+	}
+	function validateMobile(){
+		var mobile = document.getElementById("mobile").value;
+		if(mobile == ""){
+			alert("The mobile number cannot be empty");
+			return false;
+		
+		}
+		
+		if(mobile.length < 10 || mobile.length > 10){
+			alert("Mobile number should consist of 10 digits");
+			return false;
+		}
+	}
+	function validateAddress(){
+		var address = document.getElementById("address").value;
+		if(address == ""){
+			alert("The address cannot be empty");
+			return false;
+		
+		}
+	
+	}
+	function validatePassword(){
+		var password = document.getElementById("password").value;
+		if(password == ""){
+			alert("The password cannot be empty");
+			return false;
+		
+		}
+		
+		if(password.length < 8){
+			alert("Password should be atleast 8 characters");
+			return false;
+		
+		}
+	}
+		
+</script>
+</head>
+<body>
+<body>
+	<form method = "post" action = "./login.html" onsubmit = "return validateForm()">
+		<div id="fields">
+			<h2>Sign Up</h2>
+			<label for="username">User Name</label><br> 
+			<input id="username" type="text" name="username" onblur = "return validateUsername()"><br> 
+			<label for="email">Email Id</label><br> 
+			<input id="email" type="text"name="email" onblur = "return validateEmail()"><br> 
+			<label for="mobile">Mobile Number</label><br> 
+			<input id = "mobile" type="text" name="mobile" onblur = "return validateMobile()">
+			<label for="address">Address</label><br>
+			<textarea id="address" type="text" name="address"  rows = 5 cols = 20 onblur = "return validateAddress()"></textarea><br>
+			<label for="password">Password</label><br>
+			<input id="password" type="password" name="password" onblur = "return validatePassword()"><br>
+		    <button type = "submit">Register</button>
+		</div>
+	</form>
+
+</body>
+</html>

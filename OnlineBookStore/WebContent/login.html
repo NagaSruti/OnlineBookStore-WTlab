@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<style>
+#fields {
+	position: absolute;
+	top: 100px;
+	left: 40%;
+}
+body{
+background-image: url('images/loginimg.jpeg');
+background-repeat: no-repeat;
+ background-size: cover;
+}
+</style>
+<head>
+<meta charset="UTF-8">
+<title>Login</title>
+<script>
+function validateForm(){
+	var username = document.getElementById("username").value;
+	var password = document.getElementById("password").value;
+	if(username == "" && password == ""){
+		alert("The form cannot be empty");
+		return false;
+	
+	}
+	if(username == ""){
+		alert("The username cannot be empty");
+		return false;
+
+	}
+	if(password == ""){
+		alert("The password cannot be empty");
+		return false;
+	
+	}
+}
+	function validateUsername(){
+		var username = document.getElementById("username").value;
+		if(username == ""){
+			alert("The username cannot be empty");
+			return false;
+	
+		}
+	}
+	function validatePassword(){
+		var password = document.getElementById("password").value;
+		if(password == ""){
+			alert("The password cannot be empty");
+			return false;
+		
+		}
+	}
+</script>
+</head>
+<body>
+	<form method = "post" action = "./catalogue.html" onsubmit = "return validateForm()">
+	<div id="fields">
+		<h2>Log in</h2>
+
+		<label for="username">User Name</label><br> 
+		<input id="username" type="text" name="username" onblur = "return validateUsername()"><br> 
+		<label for="password">Password</label><br> 
+		<input id="password" type="password" name="password" onblur = "return validatePassword()"><br> <br>
+		<button type = "submit">Login</button>
+
+	</div>
+</form>
+</body>
+</html>
