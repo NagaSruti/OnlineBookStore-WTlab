@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<users>
+<user id="101">
+<username>John</username>
+<mobile>9856798456</mobile>
+<address>Chennai</address>
+<email>john@gmail.com</email>
+</user>
+
+<user id="102">
+<username>David</username>
+<mobile>9676798456</mobile>
+<address>Mumbai</address>
+<email>david@gmail.com</email>
+</user>
+
+<user id="103">
+<username>Ronald</username>
+<mobile>8878798456</mobile>
+<address>IBP</address>
+<email>ronald@gmail.com</email>
+</user>
+
+<user id="104">
+<username>Suzen</username>
+<mobile>7654798456</mobile>
+<address>KPHB</address>
+<email>suzen@gmail.com</email>
+</user>
+
+<user id="105">
+<username>Mary</username>
+<mobile>7865412398</mobile>
+<address>KOTI</address>
+<email>mary@gmail.com</email>
+</user>
+
+<user id="106">
+<username>Harry</username>
+<mobile>7546798456</mobile>
+<address>Delhi</address>
+<email>harry@gmail.com</email>
+</user>
+
+<user id="107">
+<username>Ana</username>
+<mobile>9087634876</mobile>
+<address>Suchitra</address>
+<email>ana@gmail.com</email>
+</user>
+
+<user id="108">
+<username>Edward</username>
+<mobile>7654798456</mobile>
+<address>SR Nagar</address>
+<email>edward@gmail.com</email>
+</user>
+
+<user id="109">
+<username>Jake</username>
+<mobile>9870798456</mobile>
+<address>Ameerpet</address>
+<email>jake@gmail.com</email>
+</user>
+
+<user id="110">
+<username>Elsa</username>
+<mobile>9234798456</mobile>
+<address>DSNR</address>
+<email>elsa@gmail.com</email>
+</user>
+
+</users>
